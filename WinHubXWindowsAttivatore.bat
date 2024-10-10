@@ -1,6 +1,4 @@
 @echo off
-@setlocal DisableDelayedExpansion
-
 rem Ask for admin privileges
 set "params=%*"
 cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive%  1>nul 2>nul || (  echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/c cd ""%~sdp0"" && %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
@@ -25,7 +23,6 @@ if "%Sceltaattivazione%" equ "3" ( goto :serverkms )
 
 
 :permanentemente
-@echo off
 
 set _act=1
 
@@ -1688,8 +1685,6 @@ exit /b
 
 
 :serverkms
-@echo off
-
 set _actwin=1
 
 set _actoff=0
@@ -5149,8 +5144,6 @@ exit /b
 
 
 :kms38
-@echo off
-
 set _act=1
 
 set _rem=0
