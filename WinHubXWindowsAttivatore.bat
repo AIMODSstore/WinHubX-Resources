@@ -121,7 +121,7 @@ cls
 
 cls
 color 07
-WinHubX Windows Attivatore HWID
+title WinHubX Windows Attivatore HWID
 
 set _args=
 set _elev=
