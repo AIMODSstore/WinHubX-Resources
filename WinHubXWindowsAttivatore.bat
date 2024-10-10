@@ -33,9 +33,6 @@ set _NoEditionChange=0
 
 set "_debug=0"
 
-
-
-
 ::========================================================================================================================================
 
 ::  Set environment variables, it helps if they are misconfigured in the system
