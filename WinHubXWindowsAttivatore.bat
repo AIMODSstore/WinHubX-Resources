@@ -15,11 +15,9 @@ echo.
 echo.================================================================
 set /p Sceltaattivazione=Seleziona Numero: 
 
-if "%Sceltaattivazione%" equ "1" ( goto :permanentemente )
-if "%Sceltaattivazione%" equ "2" ( goto :kms38 )
-if "%Sceltaattivazione%" equ "3" ( goto :serverkms )
-
-
+if "%Sceltaattivazione%" == "1" ( goto :permanentemente )
+if "%Sceltaattivazione%" == "2" ( goto :kms38 )
+if "%Sceltaattivazione%" == "3" ( goto :serverkms )
 
 
 :permanentemente
